@@ -14,5 +14,8 @@
   "scripts": {
     "start": "r3f-pack start",
     "build": "r3f-pack build"
+  },
+  "dependencies": {
+    "easy-key-generator": "^1.1.11"
   }
 }
