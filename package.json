@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@react-three/drei": "^9.105.6",
-    "easy-key-generator": "^1.1.11"
+    "easy-key-generator": "^1.1.11",
+    "leva": "^0.9.35"
   }
 }
