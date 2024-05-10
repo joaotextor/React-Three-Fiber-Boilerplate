@@ -8,6 +8,7 @@ import {
 import { Canvas } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
 import { useState } from 'react'
+import { Model as SmallRoom } from '../public/models/Small_room'
 
 function Model() {
   const url = '/models/small_room.glb'
@@ -48,7 +49,7 @@ function Model() {
 
 export default function App() {
   return (
-    <Canvas camera={{ position: [-0.5, 1, 2] }} shadows>
+    <Canvas camera={{ position: [15, 15, 15] }} shadows>
       <Environment preset="sunset" background />
       <spotLight
         position={[15, 20, 10.5]}
@@ -60,7 +61,8 @@ export default function App() {
           <sphereGeometry args={[0.25]} />
         </mesh>
       </spotLight>
-      <Model />
+      <SmallRoom />
+      {/* <Model /> */}
       <OrbitControls target={[0, 1, 0]} />
       <Stats />
     </Canvas>
